@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* 내가한거 */
+* { padding: 0; margin: 0; box-sizing: border-box;}
+a { text-decoration: none; color: inherit;}
+ul {list-style-type: none;}
+img { max-width:  100%; vertical-align: middle;}
+table{  border-collapse: collapse; width: 100%; border: none; margin-top: 40px;}
+.row { max-width: 960px; margin: 0 auto;}
+
+body { font-size: 16px; font-family: '나눔고딕'; 
+    line-height: 1.5;
+}
+
+
+#header { background: url(../images/header_bg.gif) no-repeat center; background-size: cover;
+    height: 600px; position: relative;}
+.header_text { text-align: center; color: #333; 
+    position: absolute; left: 50%; top: 40%; transform: translate(-50%,-50%);}
+
+.header_text h1 p { font-size: 48px; font-family: '나눔명조'; padding: 20px 0px;}
+.header_text > p { font-size: 22.4px;}
+
+
+#section { background: url(../images/bg.jpg) repeat;}
+#section > div { padding: 48px 0px;}
+#section h2 { font-size: 48px; font-family: '나눔명조'; color: #85665c; 
+    text-align: center; padding-bottom: 20px;}
+
+#section > .article6 { padding: 0px;}
+
+.article1 { position: relative;}
+.main_food {position: absolute; left: 50%; transform: translate(-50%); top: -110px;}
+
+.article1 ul { display: table; width: 100%; color: #666; text-align: center;
+    margin-top: 110px;}
+.article1 ul > li { display: table-cell; width: 25%; 
+    /* padding: 0 15px; */
+}
+
+.article1 h3 { font-size: 25.6px; font-family: '나눔명조'; color: #85665c; 
+    padding: 40px 0 15px; line-height: 1.2;}
+/* .article1 p { font-size: 16px; color: #666;} */
+.article1 ul > li img { height: 97px;}
+
+.article2, .article3, .article4 { text-align: center; }
+
+/* 블록성격의 자식들을 한줄로 정렬하기 위해 fioat속성을 사용하면
+    부모의 높이가 사라지는 부작용이 발생함.
+    이것을 해결하기 위해 부모요소에 overflow: hidden; 속성을 줌 */
+.article2 ul {overflow: hidden;;}
+.article2 ul li { float: left; width: 25%; padding: 40px 20px;}
+
+.article3 > p:nth-child(2), .article3 > p:nth-child(3) { color: #666;}
+.article3 > p { line-height: 1.7em;}
+
+.profile  { margin-top: 50px ;}
+.profile > p {margin-top: 30px ;}
+.profile > p:nth-child(2) {font-size: 28.8px; font-family: '나눔명조'; color: #404040;}
+.profile > p:nth-child(3) {color: #85665c;}
+
+
+table td > strong {font-size: 25.6px; color: #85665c; font-weight: normal;}
+.menu { text-align: left; padding: 20px 0; color: #404040;}
+.price { font-size: 22.4px; color: #404040; text-align: right; }
+tr {border-bottom: 1px solid #666;}
+tr:last-child {border: none;}
+
+.article4 > a {width:175.2px; line-height: 64px; background: #85665c; color:#fff;  
+    border-radius: 50px; margin-top:50px; display: inline-block;}
